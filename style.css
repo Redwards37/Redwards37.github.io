@@ -13,6 +13,9 @@ body {
 header h1 { 
      padding: 10px;
   }
+ol li { 
+     padding-left: 10px;
+}
 
 
     
