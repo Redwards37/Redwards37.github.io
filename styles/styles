@@ -61,6 +61,14 @@ video {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+audio {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 10px;
+}
+
+
 
 
     
