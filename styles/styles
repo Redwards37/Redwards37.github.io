@@ -10,7 +10,9 @@ body {
     font-size: 1em;     /* 16 Ã· 16  */
     width: 90%;          /* changed from 725px;*/
     max-width 1024px;
-    background-color: rgb(0, 217, 255); /* this color is gray */
+  background-color: #f0f8ff; /* Light blue background */
+    color: #333333; /* Dark gray text color */
+    font-family: Arial, sans-serif;
     margin: 10px auto;
 
     } 
