@@ -1,3 +1,11 @@
+<!-- @author Rae Edwards Bicycles Index Page, Southern Illinois University  Developed: 1-23-2025  Tested: 2-6-2025 -->
+
+
+/* Portrait Landscape and desktop layout (750px or more) */
+
+@media only screen and (max-width: 3200px) {
+
+
 html { 
      margin-top: 10px;
      margin-bottom: 10px;
@@ -16,6 +24,40 @@ body {
     margin: 10px auto;
 
     } 
+#mobile_menu { 
+    display: none; 
+    }
+article {
+    width: 33.92%;      /*  33.92% 480 / 960 * 100 */
+    padding: 10px 1.0417%;
+    background-color: 00FFFF; /* this color is white for column panel */
+    float: left; 
+    } 
+    
+aside {
+    width: 33.92%;          /* 47.92% 480 / 960 * 100*/
+    padding: 10px 1.0417%;
+    background-color: #00FFFF; /* this color is white for column panel  */
+    float: right; 
+    }
+main { 
+    display:flex;
+    flex-direction: column;
+    padding: 10px 1.0417%;
+    background-color: #ffffff;
+    }
+textarea {
+    height: 11em; 
+    width: 75em;
+    margin-left: .5em;
+    font-family: Arial, sans-serif; 
+} 
+th {
+    font-size: 1.6em;
+    padding-left: 10px 1.0417%;
+    padding-right: 10px;
+}    
+}
 
 header h1 { 
      padding: 10px;
@@ -24,7 +66,7 @@ ol li {
      padding-left: 10px;
 }
 image {
-     background-color: olive green;
+     background-color: light grey;
 }
 
 .rentals {
