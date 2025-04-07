@@ -2,6 +2,38 @@
 <!-- @author Rae Edwards, Rae's bike shop sales Page, Southern Illinois University  Developed: 1-23-2025  Tested: 3-27-2025 -->
 <html lang="en">
     <head>
+         <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .product-name {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+    .product-description {
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
         <meta charset="utf-8">
         <title>Rae's Bike Sales</title>
         <link rel="shortcut icon" href="images/millicon.ico">
@@ -41,20 +73,34 @@
                    type="video/mp4"
                    src="video/jenna.mp4" width="250" height="370">
             <!-- List of on Sale Bikes  -->
-            <h2>1.) Hiboy P6 Fat Tire Electric Bike </h2>
-            <p class ="first">2024 26" Expedition uprise, Your bike, your components, your way, starts at $1,099.98</p>
-            <h2>2.) Apex Full Suspension Fat Tire Ebike 1000W</h2>
-            <p class ="first">2021 26" Expedition uprise 3000 Bike, Your bike, your components, your way, starts at $1,899.00</p>
-        </main>
-         
-        <main>
-            
-            <h2>3.) iScooter iX7 Pro Off-road Electric Scooter, 2000W Motor</h2>
-            <p class ="first">2023 35" 50Miles Long Range, Your bike, your components, your way, starts at $457.00</p>
-            <h2>4.) Razor Hovertrax 2.0 Hover Board</h2>
-            <p class ="first">2019 29" uprising hover board, Your bike, your components, your way, starts at $559.00</p>
-        </main>
-         
+           <div class="product-grid">
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Hiboy+P6+Fat+Tire+Bike" alt="Hiboy P6">
+      <div class="product-name">Hiboy P6 Fat Tire Electric Bike</div>
+      <div class="product-description">All-terrain beast with rugged fat tires and powerful motor. Great for off-road adventures.</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Apex+1000W+Fat+Tire+Ebike" alt="Apex Full Suspension">
+      <div class="product-name">Apex Full Suspension Fat Tire Ebike 1000W</div>
+      <div class="product-description">Smooth full suspension ride and 1000W motor for steep climbs and rough terrain.</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=iScooter+iX7+Pro" alt="iScooter iX7 Pro">
+      <div class="product-name">iScooter iX7 Pro Off-road Electric Scooter</div>
+      <div class="product-description">Off-road ready with 2000W motor and rugged build. Built for performance and fun.</div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Razor+Hovertrax+2.0" alt="Razor Hovertrax">
+      <div class="product-name">Razor Hovertrax 2.0 Hover Board</div>
+      <div class="product-description">Fun, sleek, and self-balancing hoverboard. Great for cruising and kids.</div>
+    </div>
+
+  </div>
+
             
     </body>
 
