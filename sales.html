@@ -1,104 +1,162 @@
 <!DOCTYPE html>
-<!-- @author Rae Edwards, Rae's bike shop sales Page, Southern Illinois University  Developed: 1-23-2025  Tested: 3-27-2025 -->
+<!-- @author Rae Edwards, Rae's Bike Shop -->
 <html lang="en">
-    <head>
-         <style>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Rae's Bike Shop Sales Page" />
+  <meta name="keywords" content="bikes, electric bike, scooter, hoverboard, sales" />
+  <title>Bike Sales | Rae's Bike Shop</title>
+
+  <link rel="shortcut icon" href="images/millicon.ico" />
+  <link rel="stylesheet" href="styles/slicknav.css" />
+  <style>
     body {
       font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f9f9f9;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
     }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav {
+      background-color: #444;
+      overflow: hidden;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      float: left;
+      display: block;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    main {
+      padding: 20px;
+    }
+
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
+      margin-top: 20px;
     }
+
     .product-card {
       background-color: #fff;
       border-radius: 10px;
       padding: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
+
     .product-card img {
       max-width: 100%;
+      height: auto;
       border-radius: 8px;
     }
+
     .product-name {
       font-size: 1.1rem;
       font-weight: bold;
-      margin: 10px 0 5px;
+      margin-top: 10px;
     }
+
     .product-description {
       font-size: 0.9rem;
       color: #555;
+      margin-top: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
     }
   </style>
-        <meta charset="utf-8">
-        <title>Rae's Bike Sales</title>
-        <link rel="shortcut icon" href="images/millicon.ico">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/slicknav.css"> 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-        <script src="js/jquery.slicknav.min.js"></script> 
-        <script type="text/javascript"> 
-            $(document).ready(function(){
-                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
-            }); 
-        </script>
-        <meta name="description" content="Rae's bike shop"> <meta name="keywords" content="Rae's, sales, bicycle, mountain bike, fat bike, dirt bike, electric bike, electric scooter">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <header>
-        <body style="background-color: lightblue;">
-            <!-- Your content here -->
-               </body>
-                 </header>
-        <nav>
-        <a href="index.html">Home</a>
-        <a href="sales.hmtl">Sales</a>
-        <a href="rentals.html">Rentals</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-           <main>
-            <!-- Small Apple m4v converted with VLC to an ogg file, wont play in safari because resolution is not high enough must be >720p, but had to export under 1mb for requirments  -->
-            <embed
-                   autoplay="true"
-                   type="video/mp4"
-                   src="video/jenna.mp4" width="250" height="370">
-            <!-- List of on Sale Bikes  -->
-           <div class="product-grid">
 
-    <div class="product-card">
-      <img src="https:"Hiboy P6 Fat Tire Electric Bike26262.webp" alt="Hiboy P6">
-      <div class="product-name">Hiboy P6 Fat Tire Electric Bike</div>
-      <div class="product-description">All-terrain beast with rugged fat tires and powerful motor. Great for off-road adventures.</div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.slicknav.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Rae's Bike Shop - Sales</h1>
+  </header>
+
+  <div id="mobile_menu"></div>
+  <nav id="nav_menu">
+    <a href="index.html">Home</a>
+    <a href="sales.html">Sales</a>
+    <a href="rentals.html">Rentals</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>🚴 Featured Bikes on Sale</h2>
+
+    <!-- Optional: Sale Promo Video -->
+    <video width="320" height="240" controls autoplay muted>
+      <source src="video/jenna.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/Hiboy_P6.jpg" alt="Hiboy P6 Fat Tire Bike" />
+        <div class="product-name">Hiboy P6 Fat Tire Electric Bike</div>
+        <div class="product-description">All-terrain beast with rugged fat tires and a powerful motor. Perfect for off-road trails.</div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=Apex+1000W+Fat+Tire+Ebike" alt="Apex 1000W Ebike" />
+        <div class="product-name">Apex 1000W Fat Tire E-Bike</div>
+        <div class="product-description">Smooth suspension and a 1000W motor for hills, gravel, and more.</div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=iScooter+iX7+Pro" alt="iScooter iX7 Pro" />
+        <div class="product-name">iScooter iX7 Pro</div>
+        <div class="product-description">Off-road electric scooter with a 2000W motor. Fast and rugged.</div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=Razor+Hovertrax+2.0" alt="Razor Hovertrax" />
+        <div class="product-name">Razor Hovertrax 2.0</div>
+        <div class="product-description">Fun, sleek, and self-balancing hoverboard. Ideal for cruising around.</div>
+      </div>
+
     </div>
+  </main>
 
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x200?text=Apex+1000W+Fat+Tire+Ebike" alt="Apex Full Suspension">
-      <div class="product-name">Apex Full Suspension Fat Tire Ebike 1000W</div>
-      <div class="product-description">Smooth full suspension ride and 1000W motor for steep climbs and rough terrain.</div>
-    </div>
-
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x200?text=iScooter+iX7+Pro" alt="iScooter iX7 Pro">
-      <div class="product-name">iScooter iX7 Pro Off-road Electric Scooter</div>
-      <div class="product-description">Off-road ready with 2000W motor and rugged build. Built for performance and fun.</div>
-    </div>
-
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x200?text=Razor+Hovertrax+2.0" alt="Razor Hovertrax">
-      <div class="product-name">Razor Hovertrax 2.0 Hover Board</div>
-      <div class="product-description">Fun, sleek, and self-balancing hoverboard. Great for cruising and kids.</div>
-    </div>
-
-  </div>
-
-            
-    </body>
-
+  <footer>
+    &copy; 2025 Rae's Bike Shop | Southern Illinois University | Designed by Rae Edwards
+  </footer>
+</body>
 </html>
-
