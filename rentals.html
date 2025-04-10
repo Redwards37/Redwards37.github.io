@@ -1,80 +1,177 @@
 <!DOCTYPE html>
-<!-- @author Rae Edwards, Rae's bike shop rental Page, Southern Illinois University  Developed: 1-23-2025  Tested: 3-31-2025  -->
+<!-- 
+    Author: Rae Edwards 
+    Page: Rentals | Rae's Bike Shop - Southern Illinois University 
+    Developed: 01-23-2025 | Tested: 03-31-2025 
+-->
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <h1>Rae's bike Rentals </h1> 
-        <link rel="shortcut icon" href="images/millicon.ico">
-        <link rel="stylesheet" href="styles/main.css">
-        <meta name="description" content="rental bikes"> <meta name="keywords" content="Rae's bike shop, street bikes, dirt bikes, rentals">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <figcaption>Rae's Rentals</figcaption>
-            <figure class="cute">
-            <img  class="cute" src="images/h4.png"/>
-            <img class="cuter" src="images/h3.png"/>
-            <img src="images/bike.jpg" "width="1200"/>
-            </figure> 
-            
-        <header>
-        <body style="background-color: lightblue;">
-           <!-- Your content here -->
-        </body>
-        <link rel="stylesheet" href="styles/slicknav.css"> 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-        <script src="js/jquery.slicknav.min.js"></script> 
-        <script type="text/javascript"> 
-            $(document).ready(function(){
-                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
-            }); 
-             </script>
-        </header>
-    
-         <nav>
+<head>
+    <meta charset="UTF-8">
+    <title>Rentals | Rae's Bike Shop</title>
+    <meta name="description" content="Bike rentals including street bikes and dirt bikes.">
+    <meta name="keywords" content="Rae's bike shop, rentals, street bikes, dirt bikes, mountain bikes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="images/millicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d0ebff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #005288;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0074b7;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #e0f7ff;
+            color: black;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        article, aside {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #003d66;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #003d66;
+        }
+
+        .first {
+            font-size: 1em;
+            line-height: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        ul.bike-types {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        ul.bike-types li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Rae's Bike Rentals</h1>
+        <p>Affordable bike rentals – street & dirt bikes for all ages!</p>
+    </header>
+
+    <div id="mobile_menu"></div>
+    <nav id="nav_menu">
         <a href="index.html">Home</a>
-        <a href="sales.hmtl">Sales</a>
+        <a href="sales.html">Sales</a>
         <a href="rentals.html">Rentals</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
     </nav>
-        <ul>
-        <ol> 
-        <li> touring bike </li>
-        <li> bmx bike </li>
-        <li> mountain bike </li>
-        <li> electric bike </li>
-       </ol>
+
+    <main>
+        <section>
+            <h2>Types of Bikes for Rent</h2>
+            <ul class="bike-types">
+                <li>Touring Bike</li>
+                <li>BMX Bike</li>
+                <li>Mountain Bike</li>
+                <li>Electric Bike</li>
             </ul>
-        </nav>
-    <h2> Our bikes are fully serviced and ready to be sold for a decent price, if you break you buy! we have street bikes or Dirt bikes for your choosing. Call Rae 1-708-916-7750 for more Info!!!</h2>
-    <!-- 1sr column Street Bikes -->
-    <article>
-        <h1> Rent a street bike for the $32 each day</h1>
-        <h2> 1.) steet bike- kids and teens</h2>
-        <p class ="first"> 2018 26" Elite stealth series BMX bike, equipped with new pedals, comes with helmet and knee pads, These bikes are built for speed and distance</p>
-        <h2> 2.) street bikes - adults and young teens </h2>
-        <p class ="first"> 2021 26" Schwinn 700c glenwood hybrid bike, equipped with new break pad, comes with seat cushion, Street bikes are known for commuting, fitness,recreational cycling, </p>
-    </article>
-    <!-- 1st column Dirt bikes -->
-    <aside>
-        <h1> Rent a Dirt bike $90 each day</h1>
-        <h2> Dirt bike - kids </h2>
-        <p class = "first"> 2015 26"X-pro 125cc Dirt bike, equipped with new engine, new break pad, comes with helmut and knee pads</p>
-        <h2> Dirt bike - adults </h2>
-        <p class ="first"> 2019 26" TrailMaster TM38E 300cc Off-Road Dirt Bike, equipped with new engine, new break pad, helmut and knee pads sold separately</p>
-    </aside>
 
-    <!-- Rental terms -->
-        <footer> 
-            <h2> 2025 Rental Terms </h2> </footer>
-            <p class ="first"> Terms of service: bikes are required to be rented by an adult age 18 and older. Disclaimer and the waiver sheet has to be sign by parent or guardian, details will be included at the time of the sale.</p>
-    </body>
+            <figure>
+                <img src="images/h4.png" alt="Bike rental image 1">
+                <img src="images/h3.png" alt="Bike rental image 2">
+                <img src="images/bike.jpg" alt="Main bike image">
+            </figure>
+        </section>
+
+        <section>
+            <p class="first">
+                Our bikes are fully serviced and ready to rent at great prices. If you break it, you buy it! 
+                Choose between street or dirt bikes. Call Rae at <strong>1-708-916-7750</strong> for more info.
+            </p>
+        </section>
+
+        <section>
+            <article>
+                <h2>Street Bike Rentals - $32/day</h2>
+                <h3>1. Kids & Teens</h3>
+                <p class="first">2018 26" Elite Stealth Series BMX – new pedals, helmet and knee pads included. Built for speed and distance.</p>
+
+                <h3>2. Adults & Young Teens</h3>
+                <p class="first">2021 26" Schwinn 700c Glenwood Hybrid – new brake pads, seat cushion included. Great for commuting and recreation.</p>
+            </article>
+
+            <aside>
+                <h2>Dirt Bike Rentals - $90/day</h2>
+                <h3>1. Kids</h3>
+                <p class="first">2015 26" X-Pro 125cc Dirt Bike – new engine, brake pads, helmet and knee pads included.</p>
+
+                <h3>2. Adults</h3>
+                <p class="first">2019 26" TrailMaster TM38E 300cc – new engine and brake pads. Helmet and knee pads sold separately.</p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <h2>2025 Rental Terms</h2>
+        <p class="first">
+            Bikes must be rented by someone age 18 or older. Parent or guardian must sign a waiver for minors.
+            Full rental terms will be provided at checkout.
+        </p>
+        <p>&copy; 2025 Rae's Bike Shop | Southern Illinois University</p>
+    </footer>
+</body>
 </html>
-  
-    
-   
-
-        
-        
-          
