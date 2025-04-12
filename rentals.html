@@ -102,6 +102,20 @@
         ul.bike-types li {
             margin: 5px 0;
         }
+
+        .audio-promo {
+            background-color: #cce5ff;
+            border: 2px dashed #0074b7;
+            padding: 15px;
+            margin: 30px 0;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        .audio-promo audio {
+            width: 100%;
+            max-width: 400px;
+        }
     </style>
 </head>
 
@@ -121,6 +135,15 @@
     </nav>
 
     <main>
+        <section class="audio-promo">
+            <h2>🎧 Hear Why Rae’s is the Best!</h2>
+            <p>Quick promo — hit play below to learn what sets our bikes apart!</p>
+            <audio controls>
+                <source src="bike_sales_voice.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
         <section>
             <h2>Types of Bikes for Rent</h2>
             <ul class="bike-types">
@@ -131,9 +154,9 @@
             </ul>
 
             <figure>
-                <img src="TrailMaster TM38E 300cc Off-Road Dirt Bike.jpg" alt="Dirt bike" width="300">
-                <img src="dirtbikewhip4speed.jfif/bike.jpg" alt="Motor Bike ">
-                <img src="images/bike.jpg" alt="Main bike image">
+                <img src="images/TrailMaster_TM38E_300cc.jpg" alt="TrailMaster 300cc Off-Road Dirt Bike">
+                <img src="images/dirtbikewhip4speed.jpg" alt="Dirt Bike Whip in Motion">
+                <img src="images/bike.jpg" alt="Main rental bike image">
             </figure>
         </section>
 
@@ -175,3 +198,4 @@
     </footer>
 </body>
 </html>
+
