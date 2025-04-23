@@ -1,194 +1,71 @@
 <!DOCTYPE html>
-<!-- 
-    Author: Rae Edwards 
-    Page: Rentals | Rae's Bike Shop - Southern Illinois University 
-    Developed: 01-23-2025 | Tested: 03-31-2025 
--->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Rentals | Rae's Bike Shop</title>
-    <meta name="description" content="Bike rentals including street bikes and dirt bikes.">
-    <meta name="keywords" content="Rae's bike shop, rentals, street bikes, dirt bikes, mountain bikes">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="shortcut icon" href="images/millicon.ico">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/slicknav.css">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
-        });
-    </script>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #d0ebff;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #005288;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #0074b7;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background-color: #e0f7ff;
-            color: black;
-        }
-
-        main {
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 10px 0;
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        article, aside {
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #003d66;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1, h2 {
-            color: #003d66;
-        }
-
-        .first {
-            font-size: 1em;
-            line-height: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        ul.bike-types {
-            margin: 20px 0;
-            padding-left: 20px;
-        }
-
-        ul.bike-types li {
-            margin: 5px 0;
-        }
-
-        .audio-promo {
-            background-color: #cce5ff;
-            border: 2px dashed #0074b7;
-            padding: 15px;
-            margin: 30px 0;
-            text-align: center;
-            border-radius: 12px;
-        }
-
-        .audio-promo audio {
-            width: 100%;
-            max-width: 400px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMC SIUC Events</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #800000;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      background-color: #fff;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    h2 {
+      color: #800000;
+    }
+    footer {
+      background-color: #ddd;
+      text-align: center;
+      padding: 10px 0;
+    }
+    a {
+      color: #800000;
+      text-decoration: none;
+    }
+  </style>
 </head>
-
 <body>
-    <header>
-        <h1>Rae's Bike Rentals</h1>
-        <p>Affordable bike rentals – street & dirt bikes for all ages!</p>
-    </header>
-
-    <div id="mobile_menu"></div>
-    <nav id="nav_menu">
-        <a href="index.html">Home</a>
-        <a href="sales.html">Sales</a>
-        <a href="rentals.html">Rentals</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <main>
-
-
-        <section>
-            <h2>Types of Bikes for Rent</h2>
-            <ul class="bike-types">
-                <li>Motor Bike</li>
-                <li>BMX Bike</li>
-                <li>Dirt Bike</li>
-                <li>Electric scooter</li>
-            </ul>
-
-            <figure>
-                <img src="images/TrailMaster_TM38E_300cc.jpg" alt="TrailMaster 300cc Off-Road Dirt Bike">
-                <img src="images/dirtbikewhip4speed.jpg" alt="Dirt Bike Whip in Motion">
-                <img src="images/bike.jpg" alt="Main rental bike image">
-            </figure>
-        </section>
-
-        <section>
-            <p class="first">
-                Our bikes are fully serviced and ready to rent at great prices. If you break it, you buy it! 
-                Choose between street or dirt bikes. Call Rae at <strong>1-708-916-7750</strong> for more info.
-            </p>
-        </section>
-
-        <section>
-            <article>
-                <h2>Street Bike Rentals - $32/day</h2>
-                <h3>1. Kids & Teens</h3>
-                <p class="first">2018 26" Elite Stealth Series BMX – new pedals, helmet and knee pads included. Built for speed and distance.</p>
-
-                <h3>2. Adults & Young Teens</h3>
-                <p class="first">2021 26" Schwinn 700c Glenwood Hybrid – new brake pads, seat cushion included. Great for commuting and recreation.</p>
-            </article>
-
-            <aside>
-                <h2>Dirt Bike Rentals - $90/day</h2>
-                <h3>1. Kids</h3>
-                <p class="first">2015 26" X-Pro 125cc Dirt Bike – new engine, brake pads, helmet and knee pads included.</p>
-
-                <h3>2. Adults</h3>
-                <p class="first">2019 26" TrailMaster TM38E 300cc – new engine and brake pads. Helmet and knee pads sold separately.</p>
-            </aside>
-        </section>
-    </main>
-
-    <footer>
-        <h2>2025 Rental Terms</h2>
-        <p class="first">
-            Bikes must be rented by someone age 18 or older. Parent or guardian must sign a waiver for minors.
-            Full rental terms will be provided at checkout.
-        </p>
-        <p>&copy; 2025 Rae's Bike Shop | Southern Illinois University</p>
-    </footer>
+  <header>
+    <h1>Black Men Coalition (BMC) - SIUC</h1>
+    <p>Empowering Black Men on Campus</p>
+  </header>
+  <main>
+    <section>
+      <h2>Upcoming Event: BMC Award Ceremony</h2>
+      <p><strong>Date:</strong> Thursday, April 24, 2025</p>
+      <p><strong>Time:</strong> 7:00 PM – 8:00 PM</p>
+      <p><strong>Location:</strong> Ohio Room, SIU Student Center</p>
+      <p>Join BMC for a night of celebration and recognition at our Award Ceremony. All are welcome!</p>
+      <p><a href="https://www.instagram.com/bmc.siuc/" target="_blank">More info on Instagram</a></p>
+    </section>
+    <section>
+      <h2>Past Event: Black Man Succeed Panel</h2>
+      <p>We recently held our Black Man Succeed Panel, where attendees engaged in discussions on leadership and success strategies. Thank you to everyone who participated!</p>
+      <p><a href="https://www.instagram.com/p/DGoIBzFJ44_/" target="_blank">View on Instagram</a></p>
+    </section>
+    <section>
+      <h2>About BMC</h2>
+      <p>The Black Men Coalition at SIUC is dedicated to fostering a supportive community for Black men on campus through mentorship, leadership development, and cultural engagement.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Contact us: <a href="mailto:bmc@siu.edu">bmc@siu.edu</a> | Follow us on <a href="https://www.instagram.com/bmc.siuc/" target="_blank">Instagram</a></p>
+  </footer>
 </body>
 </html>
-
