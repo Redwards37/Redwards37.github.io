@@ -1,244 +1,90 @@
 <!DOCTYPE html>
-<!-- 
-    Author: Rae Edwards 
-    Page: Bicycle Services | Southern Illinois University 
-    Developed: 10-01-2021 | Tested: 10-03-2021 
--->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Services | Rae's Bike Shop</title>
-    <meta name="description" content="Bike repair, detailing, and parts replacement services at Rae's Bike Shop.">
-    <meta name="keywords" content="Rae, touring, Trek, GT, BMX, Road Bikes, Mountain Bikes, scooters">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="shortcut icon" href="images/millicon.ico">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/slicknav.css">
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-    <script src="js/jquery.slicknav.min.js"></script> 
-    <script>
-        $(document).ready(function(){
-            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" }); 
-        });
-    </script>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f8fd;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #005599;
-            overflow: hidden;
-        }
-
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        main {
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1em;
-        }
-
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f0f0f0;
-        }
-
-        fieldset {
-            border: 2px solid #aaa;
-            padding: 15px;
-            margin-top: 20px;
-        }
-
-        legend {
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
-
-        .disclaimer {
-            margin-top: 20px;
-            font-size: 0.95em;
-            font-style: italic;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join BMC - SIUC</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #800000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #800000;
+    }
+    section {
+      background: #fff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    ul {
+      line-height: 1.6;
+    }
+    footer {
+      background-color: #ddd;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    a {
+      color: #800000;
+      text-decoration: none;
+    }
+  </style>
 </head>
-
 <body>
-    <header>
-        <h1>Rae's Bike Shop Services</h1>
-        <p>Your go-to spot for adjustments, detailing, parts, and repairs.</p>
-    </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="sales.html">Sales</a>
-        <a href="rentals.html">Rentals</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <header>
+    <h1>Join the Black Men Coalition (BMC) - SIUC</h1>
+    <p>Become part of a community focused on empowerment, leadership, and growth.</p>
+  </header>
 
-    <main>
-        <section>
-            <fieldset>
-                <legend>Service Contributions</legend>
+  <main>
+    <section>
+      <h2>How to Join</h2>
+      <ol>
+        <li>Attend a BMC General Body Meeting – Meetings are open to all interested students.</li>
+        <li>Introduce yourself to current members and leadership.</li>
+        <li>Fill out the BMC interest form (available at meetings or through our Instagram bio).</li>
+        <li>Get added to our email list and GroupMe for event updates and opportunities.</li>
+      </ol>
+    </section>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th class="left">Service Type</th>
-                            <th>Description</th>
-                            <th>Cost</th>
-                            <th>Est. Time</th>
-                            <th>Completion</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Adjustments -->
-                        <tr><th colspan="5">Adjustments</th></tr>
-                        <tr>
-                            <td>Brake Adjustments</td>
-                            <td>Adjust front and rear brakes</td>
-                            <td>$25</td>
-                            <td>1 Hour</td>
-                            <td>1 Day</td>
-                        </tr>
-                        <tr>
-                            <td>Calibrate Gears</td>
-                            <td>Estimate and calibrate gear settings</td>
-                            <td>$25</td>
-                            <td>1 Hour</td>
-                            <td>1 Day</td>
-                        </tr>
-                        <tr>
-                            <td>Seat & Handlebar Adjustments</td>
-                            <td>Custom seat and bar adjustments</td>
-                            <td>$10</td>
-                            <td>1 Hour</td>
-                            <td>1 Day</td>
-                        </tr>
-                        <tr>
-                            <td>Adjust Wheel Hubs</td>
-                            <td>Front and rear hub adjustments</td>
-                            <td>$10</td>
-                            <td>1 Hour</td>
-                            <td>1 Day</td>
-                        </tr>
+    <section>
+      <h2>Membership Requirements</h2>
+      <ul>
+        <li>Must be a current student at Southern Illinois University Carbondale (SIUC).</li>
+        <li>Have a passion for community engagement, leadership, and personal growth.</li>
+        <li>Commitment to attend regular meetings and participate in at least 2 events per semester.</li>
+        <li>Support the mission and values of BMC, promoting unity and excellence among Black men on campus.</li>
+      </ul>
+    </section>
 
-                        <!-- Detailing -->
-                        <tr><th colspan="5">Detailing</th></tr>
-                        <tr>
-                            <td>Clean & Lube</td>
-                            <td>Deep clean and lube (condition-based)</td>
-                            <td>$25–$85</td>
-                            <td>1–5 Hours</td>
-                            <td>1 Day</td>
-                        </tr>
+    <section>
+      <h2>Stay Connected</h2>
+      <p>Follow us on <a href="https://www.instagram.com/bmc.siuc/" target="_blank">Instagram</a> for meeting times, events, and announcements.</p>
+      <p>Email us at <a href="mailto:bmc@siu.edu">bmc@siu.edu</a> if you have any questions or want to get involved directly.</p>
+    </section>
+  </main>
 
-                        <!-- New Parts -->
-                        <tr><th colspan="5">New Parts</th></tr>
-                        <tr>
-                            <td>Parts Replacement</td>
-                            <td>Replacement per part</td>
-                            <td>$25</td>
-                            <td>Per Hour</td>
-                            <td>1 Day</td>
-                        </tr>
-                        <tr>
-                            <td>Cable Replacement</td>
-                            <td>Remove & replace cables</td>
-                            <td>$48</td>
-                            <td>2 Hours</td>
-                            <td>1 Day</td>
-                        </tr>
+  <footer>
+    <p>&copy; 2025 Black Men Coalition at SIUC | Empowering Black Excellence</p>
+  </footer>
 
-                        <!-- Repairs -->
-                        <tr><th colspan="5">Repairs</th></tr>
-                        <tr>
-                            <td>Tire Repair</td>
-                            <td>Patch punctures and reinflate</td>
-                            <td>$15</td>
-                            <td>1 Hour</td>
-                            <td>1 Day</td>
-                        </tr>
-                        <tr>
-                            <td>Repair Bike Chain</td>
-                            <td>Remove, repair, and lube chain</td>
-                            <td>$10</td>
-                            <td>1 Hour</td>
-                            <td>1 Day</td>
-                        </tr>
-                        <tr>
-                            <td>Misc. Repairs</td>
-                            <td>Estimate based on damage</td>
-                            <td>$25</td>
-                            <td>Per Hour</td>
-                            <td>1 Day</td>
-                        </tr>
-
-                        <!-- Safety -->
-                        <tr><th colspan="5">Safety</th></tr>
-                        <tr>
-                            <td>Safety Checks</td>
-                            <td>Standard full-bike safety check</td>
-                            <td>$25</td>
-                            <td>1 Hour</td>
-                            <td>1 Day</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </fieldset>
-
-            <p class="disclaimer">
-                All prices are exact and do not include tax. If service time exceeds the estimate by more than 1 hour, an additional charge may apply.
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        &copy; 2025 Rae's Bike Shop | Southern Illinois University | Designed by Rae Edwards
-    </footer>
 </body>
 </html>
