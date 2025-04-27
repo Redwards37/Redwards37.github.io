@@ -1,3 +1,4 @@
+*/ This events page was created by Rae Edwards at southern illinois university of carbondale */
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,36 +12,86 @@
       margin: 0;
       padding: 0;
     }
+
+    nav {
+      background-color: #6a0dad;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 8px 12px;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #9159d3;
+      text-decoration: underline;
+    }
+
     header {
-      background-color: #800000;
+      background-color: #6a0dad;
       color: #fff;
-      padding: 20px 0;
+      padding: 40px 20px;
       text-align: center;
     }
+
     main {
       padding: 20px;
+      max-width: 900px;
+      margin: 20px auto;
     }
+
     section {
       background-color: #fff;
       margin-bottom: 20px;
-      padding: 15px;
-      border-radius: 5px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+
     h2 {
-      color: #800000;
+      color: #6a0dad;
     }
+
+    p {
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    a {
+      color: #6a0dad;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       background-color: #ddd;
       text-align: center;
-      padding: 10px 0;
-    }
-    a {
-      color: #800000;
-      text-decoration: none;
+      padding: 15px;
+      font-size: 14px;
+      color: #555;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -53,6 +104,7 @@
     <h1>Black Men Coalition (BMC) - SIUC</h1>
     <p>Empowering Black Men on Campus</p>
   </header>
+
   <main>
     <section>
       <h2>Upcoming Event: BMC Award Ceremony</h2>
@@ -62,18 +114,22 @@
       <p>Join BMC for a night of celebration and recognition at our Award Ceremony. All are welcome!</p>
       <p><a href="https://www.instagram.com/bmc.siuc/" target="_blank">More info on Instagram</a></p>
     </section>
+
     <section>
       <h2>Past Event: Black Man Succeed Panel</h2>
       <p>We recently held our Black Man Succeed Panel, where attendees engaged in discussions on leadership and success strategies. Thank you to everyone who participated!</p>
       <p><a href="https://www.instagram.com/p/DGoIBzFJ44_/" target="_blank">View on Instagram</a></p>
     </section>
+
     <section>
       <h2>About BMC</h2>
       <p>The Black Men Coalition at SIUC is dedicated to fostering a supportive community for Black men on campus through mentorship, leadership development, and cultural engagement.</p>
     </section>
   </main>
+
   <footer>
     <p>Contact us: <a href="mailto:bmc@siu.edu">bmc@siu.edu</a> | Follow us on <a href="https://www.instagram.com/bmc.siuc/" target="_blank">Instagram</a></p>
   </footer>
+
 </body>
 </html>
