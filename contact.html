@@ -1,3 +1,4 @@
+<!-- Contact Page for BMC - Created by Rae Edwards -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,30 +12,64 @@
       margin: 0;
       padding: 0;
     }
+
+    nav {
+      background-color: #800000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 8px 12px;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #a83232;
+      text-decoration: underline;
+    }
+
     header {
       background-color: #800000;
       color: white;
       text-align: center;
-      padding: 20px 0;
+      padding: 40px 20px;
     }
+
     main {
       padding: 20px;
       max-width: 600px;
-      margin: 0 auto;
+      margin: 20px auto;
       background-color: white;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
     h2 {
       color: #800000;
     }
+
     form {
       display: flex;
       flex-direction: column;
     }
+
     label {
       margin-top: 10px;
+      font-weight: bold;
     }
+
     input, textarea {
       padding: 10px;
       margin-top: 5px;
@@ -42,6 +77,7 @@
       border: 1px solid #ccc;
       font-size: 1em;
     }
+
     button {
       margin-top: 15px;
       background-color: #800000;
@@ -52,26 +88,39 @@
       font-size: 1em;
       cursor: pointer;
     }
+
     button:hover {
       background-color: #a00000;
     }
+
     footer {
       text-align: center;
       margin-top: 30px;
       padding: 15px;
       background-color: #ddd;
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer a {
+      color: #800000;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-    <nav>
+
+  <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="events.html">Events</a>
     <a href="join.html">Join</a>
     <a href="contact.html">Contact</a>
-    </nav>
-
+  </nav>
 
   <header>
     <h1>Contact BMC - SIUC</h1>
