@@ -1,4 +1,60 @@
 <!-- @author Rae Edwards BMC styles CSS page, Southern Illinois University  Developed: 1-23-2025  Tested: 2-6-2025 -->
 
+  nav {
+      background-color: #6a0dad; /* purple */
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+    
+   .padded-image {
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 40px;
+}
+
   
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    header {
+      background-color: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+*/ index page */
   
