@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMC Shop – Official T-Shirts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <style>
+    /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header / Nav */
+header {
+    background-color: #4B0082; /* Indigo Purple */
+    color: white;
+    padding: 1em 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #d1b3ff; /* Light purple on hover */
+    text-decoration: underline;
+}
+
+/* Products Section */
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin: 1em;
+    width: 250px;
+    text-align: center;
+    box-shadow: 2px 2px 6px #ccc;
+    background: #fff;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+  </style>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">BMC Shop</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Shop BMC T-Shirts</h2>
+        <section class="products">
+            <div class="product">
+                <img src="bmc-shirt1.jpg" alt="Classic BMC Logo Tee">
+                <h3>Classic Logo Tee</h3>
+                <p>$20.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="bmc-shirt2.jpg" alt="Empowerment BMC Tee">
+                <h3>Empowerment Tee</h3>
+                <p>$25.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="bmc-shirt3.jpg" alt="BMC Unity Tee">
+                <h3>Unity Tee</h3>
+                <p>$25.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Black Men Coalition @ SIUC</p>
+    </footer>
+</body>
+</html>
