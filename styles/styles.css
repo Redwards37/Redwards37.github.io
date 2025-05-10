@@ -197,3 +197,123 @@
       margin-top: 30px;
     }
 /* about page */
+
+   /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    /* Navigation Styles */
+    nav {
+      background-color: #6a0dad;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:focus {
+      background-color: #9159d3;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #6a0dad;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    /* Main Content Styles */
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    section {
+      background-color: #fff;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #6a0dad;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #6a0dad;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Image and Video Styles */
+    img, video {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 10px auto;
+      border-radius: 8px;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #ddd;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #555;
+      margin-top: 30px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li a {
+        padding: 10px;
+        text-align: center;
+      }
+    }
+/* event page */
