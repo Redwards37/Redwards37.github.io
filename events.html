@@ -6,51 +6,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BMC SIUC Events</title>
   <style>
+    /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
+      line-height: 1.6;
     }
 
+    /* Navigation Styles */
     nav {
       background-color: #6a0dad;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      padding: 15px 20px;
       position: sticky;
       top: 0;
       z-index: 1000;
     }
 
-    nav a {
-      color: white;
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.1em;
-      padding: 8px 12px;
-      transition: all 0.3s ease;
-      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
 
-    nav a:hover {
+    nav ul li a:hover,
+    nav ul li a:focus {
       background-color: #9159d3;
-      text-decoration: underline;
     }
 
+    /* Header Styles */
     header {
       background-color: #6a0dad;
       color: #fff;
-      padding: 40px 20px;
       text-align: center;
+      padding: 40px 20px;
     }
 
+    /* Main Content Styles */
     main {
-      padding: 20px;
       max-width: 900px;
       margin: 20px auto;
+      padding: 20px;
     }
 
     section {
@@ -63,23 +78,32 @@
 
     h2 {
       color: #6a0dad;
+      margin-bottom: 10px;
     }
 
     p {
-      font-size: 1.1em;
-      color: #333;
+      margin-bottom: 10px;
     }
 
     a {
       color: #6a0dad;
       text-decoration: none;
-      font-weight: bold;
     }
 
     a:hover {
       text-decoration: underline;
     }
 
+    /* Image and Video Styles */
+    img, video {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 10px auto;
+      border-radius: 8px;
+    }
+
+    /* Footer Styles */
     footer {
       background-color: #ddd;
       text-align: center;
@@ -88,17 +112,32 @@
       color: #555;
       margin-top: 30px;
     }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li a {
+        padding: 10px;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
- <ul class="nav-menu">
-   <li><a href="index.html">Home</a></li>
-     <li><a href="about.html">About</a></li>
-     <li><a href="events.html">Events</a></li>
-    <li><a href="shop.html">Shop</a></li>
-   <li><a href="join.html">Join</a></li>
- <li><a href="contact.html">Contact</a></li>
-</ul>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
   <header>
     <h1>Black Men Coalition (BMC) - SIUC</h1>
@@ -108,31 +147,31 @@
   <main>
     <section>
       <h2>Recent Event: BMC Basketball Tournament</h2>
-     <p>​The Black Men Coalition (BMC) hosted its inaugural 3v3 Basketball Tournament on April 5, 2025. This event aimed to foster community engagement and showcase athletic talent among students. !</p>
+      <p>The Black Men Coalition (BMC) hosted its inaugural 3v3 Basketball Tournament on April 5, 2025. This event aimed to foster community engagement and showcase athletic talent among students.</p>
       <p><a href="https://www.instagram.com/bmc.siuc/" target="_blank">More info on Instagram</a></p>
+      <img src="IMG_4830.jpeg" alt="BMC Basketball Tournament">
     </section>
-<img src="IMG_4830.jpeg" alt="A beautiful landscape" width = "600" height = "300" >
+
     <section>
-      <h2>Past Event: BMC Bowling  </h2>
+      <h2>Past Event: BMC Bowling</h2>
       <p>Early in the semester, BMC collaborated with the Black fraternity Phi Beta Sigma to host a bowling event open to all students. The event featured pizza, drinks, and snacks, creating a fun and welcoming environment for everyone.</p>
       <p><a href="https://www.instagram.com/p/DGoIBzFJ44_/" target="_blank">View on Instagram</a></p>
+      <video controls>
+        <source src="IMG_2670.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </section>
-     <video width="600" height="340" controls>
-    <source src="IMG_2670.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
 
     <section>
       <h2>More of BMC</h2>
-      <p>The Black Men Coalition at SIUC aims to create a safe environment for students while also making their events engaging and enjoyable</p>
+      <p>The Black Men Coalition at SIUC aims to create a safe environment for students while also making their events engaging and enjoyable:</p>
       <ul>
-        <li> BMC x FEDS Jeapordy </li>
-        <li> Black Man Succeed Panel</li>
-        <li>Pie a BMC Member </li>
-        <li> BMC hygiene giveaway </li>
-        <li> BMC Carbondale cleanup </li>
-        <li> BMC x NSBE x AKA: Valentine day sale</li>
-        
+        <li>BMC x FEDS Jeopardy</li>
+        <li>Black Men Succeed Panel</li>
+        <li>Pie a BMC Member</li>
+        <li>BMC Hygiene Giveaway</li>
+        <li>BMC Carbondale Cleanup</li>
+        <li>BMC x NSBE x AKA: Valentine's Day Sale</li>
       </ul>
     </section>
   </main>
@@ -143,3 +182,7 @@
 
 </body>
 </html>
+
+
+
+    
