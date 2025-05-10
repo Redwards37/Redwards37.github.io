@@ -6,36 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact BMC - SIUC</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f0f0;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
-    nav {
-      background-color: #6a0dad; /* purple */
-      padding: 10px;
-      text-align: center;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
     }
 
-    nav a {
+    nav {
+      background-color: #6a0dad;
+      padding: 15px 0;
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .nav-menu li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
       font-size: 1.1em;
       padding: 8px 12px;
-      transition: all 0.3s ease;
+      transition: background-color 0.3s ease, text-decoration 0.3s ease;
       border-radius: 5px;
     }
 
-    nav a:hover {
-      background-color: #8753c9; /* lighter purple for hover */
+    .nav-menu li a:hover {
+      background-color: #8753c9;
       text-decoration: underline;
     }
 
     header {
-      background-color: #6a0dad; /* changed from maroon to purple */
+      background-color: #6a0dad;
       color: white;
       text-align: center;
       padding: 40px 20px;
@@ -51,7 +61,8 @@
     }
 
     h2 {
-      color: #6a0dad; /* changed from maroon to purple */
+      color: #6a0dad;
+      margin-bottom: 10px;
     }
 
     form {
@@ -74,7 +85,7 @@
 
     button {
       margin-top: 15px;
-      background-color: #6a0dad; /* changed from maroon to purple */
+      background-color: #6a0dad;
       color: white;
       padding: 10px;
       border: none;
@@ -85,7 +96,7 @@
     }
 
     button:hover {
-      background-color: #8753c9; /* lighter purple hover */
+      background-color: #8753c9;
     }
 
     footer {
@@ -98,7 +109,7 @@
     }
 
     footer a {
-      color: #6a0dad; /* changed from maroon to purple */
+      color: #6a0dad;
       text-decoration: none;
     }
 
@@ -108,20 +119,26 @@
   </style>
 </head>
 <body>
-<ul class="nav-menu">
-   <li><a href="index.html">Home</a></li>
-     <li><a href="about.html">About</a></li>
-     <li><a href="events.html">Events</a></li>
-    <li><a href="shop.html">Shop</a></li>
-   <li><a href="join.html">Join</a></li>
- <li><a href="contact.html">Contact</a></li>
-</ul>
 
+  <!-- Fixed Navigation -->
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
   <header>
     <h1>Contact BMC - SIUC</h1>
     <p>We’d love to hear from you!</p>
   </header>
 
+  <!-- Main Content -->
   <main>
     <h2>Send Us a Message</h2>
     <form action="mailto:bmc@siu.edu" method="post" enctype="text/plain">
@@ -133,14 +150,17 @@
 
       <label for="message">Message:</label>
       <textarea id="message" name="message" rows="6" required></textarea>
+
       <button type="reset">Reset</button>
       <button type="submit">Send</button>
     </form>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>Black Men Coalition at SIUC | <a href="mailto:bmc@siu.edu">bmc@siu.edu</a> | <a href="https://www.instagram.com/bmc.siuc/" target="_blank">Instagram</a></p>
   </footer>
 
 </body>
 </html>
+
