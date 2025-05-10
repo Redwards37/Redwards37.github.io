@@ -6,36 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Join BMC - SIUC</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fdfdfd;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
-    nav {
-      background-color: #6a0dad; /* purple */
-      padding: 10px;
-      text-align: center;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
     }
 
-    nav a {
+    nav {
+      background-color: #6a0dad;
+      padding: 15px 0;
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .nav-menu li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
       font-size: 1.1em;
       padding: 8px 12px;
-      transition: all 0.3s ease;
+      transition: background-color 0.3s ease, text-decoration 0.3s ease;
       border-radius: 5px;
     }
 
-    nav a:hover {
+    .nav-menu li a:hover {
       background-color: #a83232;
       text-decoration: underline;
     }
 
     header {
-      background-color: #6a0dad; /* changed from maroon to purple */
+      background-color: #6a0dad;
       color: white;
       padding: 40px 20px;
       text-align: center;
@@ -48,7 +58,8 @@
     }
 
     h2 {
-      color: #6a0dad; /* changed from maroon to purple */
+      color: #6a0dad;
+      margin-bottom: 10px;
     }
 
     section {
@@ -61,6 +72,15 @@
 
     ul, ol {
       line-height: 1.6;
+      margin-left: 20px;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      max-width: 100%;
+      height: auto;
     }
 
     footer {
@@ -73,7 +93,7 @@
     }
 
     a {
-      color: #6a0dad; /* changed from maroon to purple */
+      color: #6a0dad;
       text-decoration: none;
     }
 
@@ -84,19 +104,25 @@
 </head>
 <body>
 
- <ul class="nav-menu">
-   <li><a href="index.html">Home</a></li>
-     <li><a href="about.html">About</a></li>
-     <li><a href="events.html">Events</a></li>
-    <li><a href="shop.html">Shop</a></li>
-   <li><a href="join.html">Join</a></li>
- <li><a href="contact.html">Contact</a></li>
-</ul>
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
   <header>
     <h1>Join the Black Men Coalition (BMC) - SIUC</h1>
     <p>Become part of a community focused on empowerment, leadership, and growth.</p>
   </header>
 
+  <!-- Main Content -->
   <main>
     <section>
       <h2>How to Join</h2>
@@ -112,25 +138,29 @@
       <h2>Membership Requirements</h2>
       <ul>
         <li>Must be a current student at Southern Illinois University Carbondale (SIUC).</li>
-        <li>Have a passion for community engagement, leadership, and personal growth and also posses a high moral character.</li>
+        <li>Have a passion for community engagement, leadership, and personal growth and also possess a high moral character.</li>
         <li>Commitment to attend regular meetings and participate in at least 2 events per semester.</li>
         <li>Support the mission and values of BMC, promoting unity and excellence among Black men on campus.</li>
-        <li> Member must not have a criminal record without sponsoring chapter approval.</li>
-        <li> Member must pay $10.00 initiation fee and chapter dues of $20.00 annually.</li>
+        <li>Must not have a criminal record without sponsoring chapter approval.</li>
+        <li>Pay $10.00 initiation fee and chapter dues of $20.00 annually.</li>
       </ul>
     </section>
-    <section> 
-      <h2> Excutive board requirements </h2>
+
+    <section>
+      <h2>Executive Board Requirements</h2>
       <ul>
-        <li> Member must be a student in good standing witha minimum of 2.5 GPA.</li>
-        <li> Member must have completed two semesters of college.</li>
-        <li> Member must commit to at least 5 hours of service per month.</li>
-        <li> Member must attend a mandatory oreintation session and/ or refresher session.</li>
-        <li> Member must not have a criminal record without sponsoring chapter approval.</li>
-        <li> Member must pay $10.00 initiation fee and chapter dues of $20.00 annually.</li>
-        <li> Member must devise a plan of service for each academic school year.</li>
+        <li>Be a student in good standing with a minimum of 2.5 GPA.</li>
+        <li>Must have completed two semesters of college.</li>
+        <li>Commit to at least 5 hours of service per month.</li>
+        <li>Attend a mandatory orientation session and/or refresher session.</li>
+        <li>Must not have a criminal record without sponsoring chapter approval.</li>
+        <li>Pay $10.00 initiation fee and chapter dues of $20.00 annually.</li>
+        <li>Devise a plan of service for each academic school year.</li>
       </ul>
- <img src="thumbnail_Iyanuoluwa Alabi - BMCgrop.jpg" alt="A beautiful landscape" width = "600" height = "700" >
+
+      <img src="thumbnail_Iyanuoluwa Alabi - BMCgrop.jpg" alt="BMC Group Image" width="600" height="700">
+    </section>
+
     <section>
       <h2>Stay Connected</h2>
       <p>Follow us on <a href="https://www.instagram.com/bmc.siuc/" target="_blank">Instagram</a> for meeting times, events, and announcements.</p>
@@ -138,6 +168,7 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Black Men Coalition at SIUC | Empowering Black Excellence</p>
   </footer>
