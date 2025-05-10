@@ -1,133 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>BMC Shop – Official T-Shirts</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMC Shop – Official T-Shirts</title>
   <style>
-    /* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    /* Reset and Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-/* Header / Nav */
-header {
-    background-color: #4B0082; /* Indigo Purple */
-    color: white;
-    padding: 1em 0;
-}
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 20px;
-}
+    /* Navigation Styles */
+    nav {
+      background-color: #6a0dad;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 30px;
+    }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+    .nav-menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 8px 12px;
+      transition: background-color 0.3s ease, text-decoration 0.3s ease;
+      border-radius: 5px;
+    }
 
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+    .nav-menu li a:hover {
+      background-color: #9159d3;
+      text-decoration: underline;
+    }
 
-.nav-links li a:hover {
-    color: #d1b3ff; /* Light purple on hover */
-    text-decoration: underline;
-}
+    /* Header Styles */
+    header {
+      background-color: #4B0082;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-/* Products Section */
-.products {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 2em;
-    max-width: 1000px;
-    margin: auto;
-}
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.5em;
+    }
 
-.product {
-    border: 1px solid #ccc;
-    padding: 1em;
-    margin: 1em;
-    width: 250px;
-    text-align: center;
-    box-shadow: 2px 2px 6px #ccc;
-    background: #fff;
-}
+    /* Main Content */
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-.product img {
-    max-width: 100%;
-    height: auto;
-}
+    main h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
 
-/* Footer */
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    margin-top: 2em;
-}
+    /* Products Section */
+    .products {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
 
+    .product {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      margin-bottom: 10px;
+      color: #4B0082;
+    }
+
+    .product p {
+      margin-bottom: 15px;
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    .product button {
+      background-color: #6a0dad;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .product button:hover {
+      background-color: #9159d3;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #d1b3ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
+</head>
 <body>
+
+  <!-- Navigation Menu -->
+  <nav>
     <ul class="nav-menu">
-   <li><a href="index.html">Home</a></li>
-     <li><a href="about.html">About</a></li>
-     <li><a href="events.html">Events</a></li>
-    <li><a href="shop.html">Shop</a></li>
-   <li><a href="join.html">Join</a></li>
- <li><a href="contact.html">Contact</a></li>
-</ul>
-    <header>
-        <div class="navbar">
-            <h1 class="logo">BMC Shop</h1>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-        </div>
-    </header>
+  <!-- Header Section -->
+  <header>
+    <h1>BMC Shop</h1>
+    <p>Official Merchandise of the Black Men Coalition at SIUC</p>
+  </header>
 
-    <main>
-        <h2>Shop BMC T-Shirts</h2>
-        <section class="products">
-            <div class="product">
-                <img src="bmc-shirt1.jpg" alt="Classic BMC Logo Tee">
-                <h3>Classic Logo Tee</h3>
-                <p>$20.00</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="bmc-shirt2.jpg" alt="Empowerment BMC Tee">
-                <h3>Empowerment Tee</h3>
-                <p>$25.00</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="bmc-shirt3.jpg" alt="BMC Unity Tee">
-                <h3>Unity Tee</h3>
-                <p>$25.00</p>
-                <button>Add to Cart</button>
-            </div>
-        </section>
-    </main>
+  <!-- Main Content -->
+  <main>
+    <h2>Shop BMC T-Shirts</h2>
+    <section class="products">
+      <div class="product">
+        <img src="bmc-shirt1.jpg" alt="Classic BMC Logo Tee">
+        <h3>Classic Logo Tee</h3>
+        <p>$20.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="bmc-shirt2.jpg" alt="Empowerment BMC Tee">
+        <h3>Empowerment Tee</h3>
+        <p>$25.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="bmc-shirt3.jpg" alt="BMC Unity Tee">
+        <h3>Unity Tee</h3>
+        <p>$25.00</p>
+        <button>Add to Cart</button>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Black Men Coalition @ SIUC</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Black Men Coalition at Southern Illinois University Carbondale | Follow us on <a href="https://www.instagram.com/bmc.siuc/" target="_blank">Instagram</a></p>
+  </footer>
+
 </body>
 </html>
