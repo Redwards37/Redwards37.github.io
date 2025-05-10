@@ -2,54 +2,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="../styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BMC SIUC | Black Men Coalition</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
   <style>
-    nav {
-      background-color: #6a0dad; /* purple */
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      font-family: sans-serif;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  object-fit: contain;
-}
-    
-   .padded-image {
-        padding-top: 10px;
-        padding-right: 20px;
-        padding-bottom: 30px;
-        padding-left: 40px;
-}
-
-  
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
-    .container {
-      padding: 20px;
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      line-height: 1.6;
     }
 
     header {
@@ -58,11 +26,84 @@
       text-align: center;
     }
 
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #6a0dad;
+      padding: 10px 0;
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-menu li {
+      margin: 0 15px;
+    }
+
+    .nav-menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      transition: background-color 0.3s ease;
+      border-radius: 4px;
+      display: block;
+    }
+
+    .nav-menu li a:hover {
+      background-color: #8a2be2;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px 0;
+      object-fit: contain;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    h2, h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #444;
+    }
+
+    a {
+      color: #6a0dad;
+    }
+
     footer {
       background-color: #eee;
       text-align: center;
       padding: 15px;
       font-size: 14px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 5px 0;
     }
   </style>
 </head>
@@ -71,19 +112,22 @@
     <h1>The Black Men Coalition at SIUC</h1>
     <p>Mentoring, Education, Health & Wellness, and Economic Development.</p>
   </header>
-<ul class="nav-menu">
-   <li><a href="index.html">Home</a></li>
-     <li><a href="about.html">About</a></li>
-     <li><a href="events.html">Events</a></li>
-    <li><a href="shop.html">Shop</a></li>
-   <li><a href="join.html">Join</a></li>
- <li><a href="contact.html">Contact</a></li>
-</ul>
-  
-<img src="Screenshot 2025-04-30 141325.jpg" alt="A beautiful landscape">
-  
+
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
   <div class="container">
-    <div class="hero">
+    <img src="Screenshot 2025-04-30 141325.jpg" alt="A beautiful landscape" />
+
+    <div class="hero section">
       <h2>Welcome to BMC at Southern Illinois University Carbondale</h2>
       <p>Building community, leadership, and academic success among Black men at SIUC.</p>
     </div>
@@ -95,8 +139,6 @@
         AAAAANDDD TO EMPOWER THE BLACK COMMUNITY THROUGH MENTORING, EDUCATION, HEALTH AND WELLNESS, AND ECONOMIC DEVELOPMENT.
       </p>
     </div>
-
-
 
     <div class="section">
       <h3>Join Us</h3>
